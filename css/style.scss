@@ -1,0 +1,116 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+// переменная цвета плиток
+$quote_color: #e8bda1;
+// миксин для форматирования текста
+@mixin text($fs, $lh, $fw, $mt) {
+  display: block;
+  font-size: $fs;
+  line-height: $lh;
+  font-weight: $fw;
+  margin-top: $mt;
+}
+
+body {
+  width: 100%;
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+main {
+  background-color: #000000;
+  padding: 0% 15%;
+}
+.wrapper_main {
+  display: grid;
+  grid-template-columns: 55% 45%;
+  height: 908px;
+  box-sizing: border-box;
+  align-items: center;
+}
+.wrapper_text {
+  text-align: left;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0% 5%;
+}
+
+.container_text {
+  width: 540px;
+  h2 {
+    @include text(60px, 66px, 700, 0);
+  }
+  .text_1 {
+    @include text(24px, 43.2px, 700, 35px);
+  }
+  .text_2 {
+    @include text(20px, 44px, 200, 20px);
+  }
+  a {
+    display: block;
+    color: #000000;
+    background-color: $quote_color;
+    border-radius: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    margin: 20px 350px 0 0;
+    padding: 15px 30px 15px 30px;
+    letter-spacing: 1px;
+    &:hover {
+      background-color: #fff;
+    }
+  }
+}
+.wrapper_quote {
+  color: #000000;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  height: 784px;
+  width: 505px;
+}
+
+.quote {
+  height: 240px;
+  width: 505px;
+  background-color: $quote_color;
+  border-radius: 10px;
+  padding: 0 30px;
+  position: relative;
+}
+
+.text_quote {
+  &:before {
+    content: "\201c";
+    font-size: 8em;
+    position: absolute;
+    left: 30px;
+    top: 50px;
+    color: #fff;
+  }
+  @include text(1rem, 25.6px, 300, 60px);
+}
+
+.text_autor {
+  @include text(1.25rem, 25.6px, 700, 10px);
+}
+// использование амперсанда и вложенности
+footer {
+  height: 90px;
+  background-color: #3a3a3a;
+  font-size: 13px;
+  text-align: center;
+  line-height: 90px;
+  a {
+    color: #b9d6ff;
+    &:hover {
+      text-decoration: none;
+      color: #5f5f5f;
+    }
+  }
+}

@@ -1,0 +1,130 @@
+@charset "UTF-8";
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+main {
+  background-color: #000000;
+  padding: 0% 15%;
+}
+
+.wrapper_main {
+  display: grid;
+  grid-template-columns: 55% 45%;
+  height: 908px;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+.wrapper_text {
+  text-align: left;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0% 5%;
+}
+
+.container_text {
+  width: 540px;
+}
+.container_text h2 {
+  display: block;
+  font-size: 60px;
+  line-height: 66px;
+  font-weight: 700;
+  margin-top: 0;
+}
+.container_text .text_1 {
+  display: block;
+  font-size: 24px;
+  line-height: 43.2px;
+  font-weight: 700;
+  margin-top: 35px;
+}
+.container_text .text_2 {
+  display: block;
+  font-size: 20px;
+  line-height: 44px;
+  font-weight: 200;
+  margin-top: 20px;
+}
+.container_text a {
+  display: block;
+  color: #000000;
+  background-color: #e8bda1;
+  border-radius: 5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  margin: 20px 350px 0 0;
+  padding: 15px 30px 15px 30px;
+  letter-spacing: 1px;
+}
+.container_text a:hover {
+  background-color: #fff;
+}
+
+.wrapper_quote {
+  color: #000000;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  height: 784px;
+  width: 505px;
+}
+
+.quote {
+  height: 240px;
+  width: 505px;
+  background-color: #e8bda1;
+  border-radius: 10px;
+  padding: 0 30px;
+  position: relative;
+}
+
+.text_quote {
+  display: block;
+  font-size: 1rem;
+  line-height: 25.6px;
+  font-weight: 300;
+  margin-top: 60px;
+}
+.text_quote:before {
+  content: "“";
+  font-size: 8em;
+  position: absolute;
+  left: 30px;
+  top: 50px;
+  color: #fff;
+}
+
+.text_autor {
+  display: block;
+  font-size: 1.25rem;
+  line-height: 25.6px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+footer {
+  height: 90px;
+  background-color: #3a3a3a;
+  font-size: 13px;
+  text-align: center;
+  line-height: 90px;
+}
+footer a {
+  color: #b9d6ff;
+}
+footer a:hover {
+  text-decoration: none;
+  color: #5f5f5f;
+}/*# sourceMappingURL=style.css.map */
